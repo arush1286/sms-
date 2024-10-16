@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.png') no-repeat center center fixed; /* Use your background image name */
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header h1 {
+    font-size: 2.5rem;
+    color: #3A6EA5;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Form Section */
+.form-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+form input {
+    flex: 1 1 45%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    border-color: #3A6EA5;
+}
+
+form button {
+    flex: 1 1 100%;
+    padding: 12px;
+    background-color: #3A6EA5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #33689b;
+}
+
+/* Table Section */
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #3A6EA5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    form input, form button {
+        flex: 1 1 100%;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+

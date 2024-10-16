@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof Santosh Mittal H/S School - Student Data Entry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prof Santosh Mittal H/S School Pachore</h1>
+            <h2>Student Data Entry Portal</h2>
+        </header>
+
+        <!-- Student Form -->
+        <section class="form-section">
+            <h2>Add Student Information</h2>
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="roll" placeholder="Roll Number" required>
+                <input type="email" id="contact" placeholder="Parent's Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Student List -->
+        <section class="table-section">
+            <h2>Students List</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Contact Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student data will appear here -->
+                </tbody>
+            </table>
+            <!-- Save Button -->
+            <button id="saveButton">Save as CSV</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
